@@ -1,0 +1,6 @@
+Até o momento vimos o javascript, tanto na nossa revisão quanto durante o nivelamento, para desenvolvimento de pequenos sistemas como objetivos pontuais ou apenas em nossas plataformas de testes, mas este não é o seu principal uso. O conteúdo abaixo nos ajudará a compreender um pouco mais sobre o seu poder e como podemos potencializar o seu uso com o Node.js.
+
+Nesta aula, vamos ver os seguintes tópicos:
+- Introdução a Node.js - entender como diferenciar os componentes que formam um ecossistema Node e explorar suas funcionalidades.
+- NPM - conhecer a utilidade do NPM e como podemos incorporar suas bibliotecas em nossos projetos.
+- Sistema de módulos - compreender como utilizar diferentes módulos (exportar e importar) dentro dos nossos blocos de código.
