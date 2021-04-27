@@ -1,8 +1,8 @@
-let numeros = [2, 4, 6];
+let numeros = [2, 4, 6]; //Array
 
-let dobrarNumeros = numeros.map(function(umNumero) {
+let numerosDobrados = numeros.map(function(umNumero){ //Um novo array
     return umNumero * 2;
 });
 
-console.log(numeros);
-console.log(dobrarNumeros);
+console.log(numeros); //Array inicial
+console.log(numerosDobrados); //Novo Array

@@ -3,3 +3,4 @@ let { nome, idade } = pessoa;
 
 console.log(nome);
 console.log(idade);
+console.log(pessoa);

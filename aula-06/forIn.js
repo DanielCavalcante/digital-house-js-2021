@@ -4,5 +4,5 @@ let pessoa = {
 }
 
 for(let atributo in pessoa) {
-    console.log(atributo)
+    console.log(atributo, pessoa[atributo]);
 }
