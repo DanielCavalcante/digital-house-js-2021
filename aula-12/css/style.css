@@ -1,0 +1,20 @@
+body {
+    background-color: black;
+}
+
+h2 {
+    color: red;
+}
+
+h2.sub-title {
+    font-size: 22px;
+    color: white;
+}
+
+div#body-background {
+    background-color: turquoise;
+}
+
+.box {
+    background-color: white;
+}
