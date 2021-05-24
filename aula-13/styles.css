@@ -1,0 +1,23 @@
+.pai {
+    width: 80%;
+    background-color: red;
+}
+
+.filho {
+    width: 50%;
+    background-color: grey;
+}
+input {
+    margin: 100px 250px;
+    padding-left: 100px;
+    border: solid 2px orange;
+}
+
+@media (max-width: 460px){
+    div1 {
+        width: 50%;
+    }
+    div2 {
+        width: 50%;
+    }
+}
