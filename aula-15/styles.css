@@ -1,0 +1,15 @@
+.create-button {
+    background-color: darkblue;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    height: 35px;
+    width: 250px;
+}
+.create-button:hover {
+    background-color: teal;
+    cursor: pointer;
+    text-decoration: underline;
+}

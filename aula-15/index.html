@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet" />
+    <title>Digital House</title>
+</head>
+<body>
+    <form action="/realizar-cadastro" method="POST">
+        <h3>Informações pessoais</h3>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" required>
+        <br />
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" required>
+        <br />
+        <label for="age">Data de nascimento:</label>
+        <input type="date" name="age" id="age" required>
+
+        <br />
+        <h3>Método de pagamento</h3>
+        <label for="dinheiro">Dinheiro:</label>
+        <input type="checkbox" name="tipo-pagamento" value="Dinheiro" id="dinheiro" checked>
+        <label for="debito">Débito:</label>
+        <input type="checkbox" name="tipo-pagamento" value="Débito" id="debito">
+        <label for="credito">Crédito:</label>
+        <input type="checkbox" name="tipo-pagamento" value="Crédito" id="credito">
+        <br />
+        <h3>Genero</h3>
+        <label for="feminino">Feminino:</label>
+        <input type="radio" name="genero" value="Feminino" id="feminino">
+        <label for="masculino">Masculino:</label>
+        <input type="radio" name="genero" value="Masculino" id="masculino">
+        <label for="outro">Outro:</label>
+        <input type="radio" name="genero" value="Outro" id="outro">
+        </form>
+        <br />
+        <textarea rows="4" name="descricao">
+        </textarea>
+        <br />
+        <select name="color">
+            <option value=""></option>
+            <option value="verde">Verde</option>
+            <option value="preto">Preto</option>
+            <option value="branco">Branco</option>
+        </select>
+        <br />
+        <a href="/xuxinha">Link</a>
+        <button type="submit" class="create-button">
+            Cadastrar
+        </button>
+    </form>
+</body>
+</html>
