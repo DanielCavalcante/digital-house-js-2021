@@ -6,6 +6,10 @@ app.get('/', (req, res) => {
   res.send('Digital House')
 })
 
+const routes = require('./routes/index')
+
+app.use('/api', routes)
+
 app.listen(port, () => {
   console.log(`O nosso serviço está funcionando na porta: ${port}`)
 })
