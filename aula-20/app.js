@@ -3,12 +3,13 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
-const books = [ 
-  {author: 'Xuxinha', title: 'Contos de Xuxinha'}, 
-  {author: 'Nena', title: 'Contos de Nena'}
-]
+const books = [
+  {isbn: 1, author: 'Xuxinha', title: 'Contos de Xuxinha'},
+  {isbn: 2, author: 'Nena', title: 'Contos de Nena'}
+];
 
-app.use(express.json())
+app.set('view engine', 'ejs');
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('Digital House');
@@ -25,6 +26,23 @@ app.get('/books', (req, res) => {
 app.post('/books', (req, res) => {
   let { title, author } = req.body
   res.send({ title, author, publisher: 'Digital House' });
+})
+
+app.put('/books/:isbn', (req, res) => {
+  let { isbn } = req.params
+  let { publisher } = req.body
+  let book = books[isbn-1];
+  book.publisher = publisher;
+  res.send(book);
+})
+
+app.delete('/books/:isbn', (req, res) => {
+  let { isbn } = req.params;
+  res.send(`Livro removido com sucesso para o isbn: ${isbn}`)
+})
+
+app.use((req, res) => {
+  res.status(404).render('not-found');
 })
 
 app.listen(port, () => {
