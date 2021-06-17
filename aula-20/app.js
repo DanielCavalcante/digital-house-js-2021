@@ -30,7 +30,7 @@ app.post('/books', (req, res) => {
 
 app.put('/books/:isbn', (req, res) => {
   let { isbn } = req.params
-  let { publisher } = req.body
+  let { publisher, author,  } = req.body
   let book = books[isbn-1];
   book.publisher = publisher;
   res.send(book);

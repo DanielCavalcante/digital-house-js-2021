@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital House - Multer</title>
+</head>
+<body>
+  <h1>Digital House Image Uploaded</h1>
+  <figure style="width: 300px;">
+    <img src="<%= image %>" />
+    <p>URL: <a href="<%= image %>" target="_blank"><%= image %></a></p>
+    <p>File size: <%= new Intl.NumberFormat().format(size / 1024) %> KB</p>
+  </figure>
+</body>
+</html>
