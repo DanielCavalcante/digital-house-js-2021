@@ -21,7 +21,8 @@ app.post('/image-upload', upload.single('image'), (req, res) => {
 })
 
 app.post('/multiple-image-upload', upload.array('images'), (req, res) => {
-  res.send(req.files)
+  console.log(req.files)
+  res.render('all-images-render', { files: req.files })
 })
 
 app.listen(port, () => {
