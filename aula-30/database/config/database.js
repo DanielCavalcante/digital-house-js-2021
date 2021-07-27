@@ -1,10 +1,10 @@
 module.exports = {
-    username: 'xuxinha',
-    password: 'xuxinha@123',
+    username: 'root',
+    password: 'root@123',
     database: 'sequelize-lesson',
     host: 'localhost',
     dialect: 'mysql',
-    port: 3306,
+    port: '3306',
     options: {
         operatorsAliases: false
     }

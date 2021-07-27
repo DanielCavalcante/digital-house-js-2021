@@ -6,7 +6,6 @@ const getPokes = async () => {
     const res = await fetch(url);
     const pokes = await res.json();
     console.log(pokes.results);
-    
   } catch (err) {
     console.error(err);
   }
