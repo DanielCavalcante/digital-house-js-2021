@@ -5,7 +5,7 @@ const routes = require('./routes');
 
 app.use(express.json());
 const models = require('./database/models');
-
+console.log(models)
 const connect = async () => {
   try {
     await models.sequelize.authenticate();
