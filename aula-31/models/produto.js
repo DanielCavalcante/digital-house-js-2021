@@ -11,6 +11,7 @@ module.exports = (sequelize, DataTypes) => {
         as: 'Categoria',
         required: true
       })
+      // Produto.belongsToMany(models.Precos, { through: models.Precos })
     }
   };
   Produto.init({

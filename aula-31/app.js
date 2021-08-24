@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
-const port = 3000;
 const produtoRoutes = require('./routes/produto');
+require('dotenv').config();
 
 app.use(express.json());
 const models = require('./models');
@@ -23,6 +23,6 @@ app.get('/', (req, res) => {
 app.use(produtoRoutes)
 
 
-app.listen(port, () => {
-    console.log(`Server is running on port: ${port}`);
+app.listen(process.env.PORT, () => {
+    console.log(`Server is running on port: ${process.env.PORT}`);
 })

@@ -5,8 +5,8 @@ require('dotenv').config();
 
 app.use(express.json())
 
-app.get('/pokes', (req, res) => {
-    axios.get('https://pokeapi.co/api/v2/pokemon').then(response => {
+app.get('/pokes?', (req, res) => {
+    axios.get('https://pokeapi.co/api/v2/pokemon/:id').then(response => {
         if (response.data.results.length == 0) {
             res.status(404).send('Nenhum pokemon foi encontrado');
         }
