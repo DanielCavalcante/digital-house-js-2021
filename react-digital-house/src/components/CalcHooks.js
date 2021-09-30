@@ -4,23 +4,9 @@ const CalcHooks = () => {
     
     const [number, setNumber] = useState(0)
     const [showNumber, setShowNumber] = useState(false)
-    const [pokes, setPokes] = useState(['Pikachu'])
-
-    useEffect(() => {
-        fetch('https://pokeapi.co/api/v2/pokemon')
-        .then(res => res.json())
-        .then(res => {
-            console.log(res)
-            setPokes(res)
-        }
-        )
-        .catch(err => console.log(err))
-
-    }, [])
 
     return (
         <>
-            
             <button onClick={() => setNumber(number + 1)}>
                 Click to increment by 1
             </button>
